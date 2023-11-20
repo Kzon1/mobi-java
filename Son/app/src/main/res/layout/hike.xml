@@ -1,0 +1,48 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.cardview.widget.CardView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/contactCard"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:layout_margin="8dp"
+    app:cardCornerRadius="8dp">
+
+    <!-- Customize this layout as per your requirements -->
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:weightSum="4"
+        android:padding="15dp">
+
+        <EditText
+            android:id="@+id/hikeName"
+            android:layout_weight="2"
+            android:layout_width="0dp"
+            android:layout_height="45dp"
+            android:text="Hike Name"
+            android:background="@drawable/hike_element"
+            android:textColor="@color/white"
+            android:gravity="center"
+            android:focusable="false"
+            android:textAppearance="@style/TextAppearance.AppCompat.Medium" />
+
+        <Button
+            android:id="@+id/moreButton"
+            android:layout_width="0dp"
+            android:text="More"
+            android:backgroundTint="@color/primaryColor"
+            android:layout_height="45dp"
+            android:layout_marginStart="5dp"
+            android:layout_weight="1"/>
+        <Button
+            android:id="@+id/deleteButton"
+            android:layout_width="0dp"
+            android:layout_height="45dp"
+            android:layout_marginStart="5dp"
+            android:text="Delete"
+            android:backgroundTint="@color/orange"
+            android:layout_weight="1"/>
+    </LinearLayout>
+</androidx.cardview.widget.CardView>

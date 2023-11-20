@@ -1,0 +1,36 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    tools:context=".ObservationHome">
+
+    <androidx.appcompat.widget.Toolbar
+        android:id="@+id/toolBar"
+        android:layout_width="409dp"
+        android:layout_height="wrap_content"
+        android:background="@color/blue"
+        android:minHeight="?attr/actionBarSize"
+        app:title="Observations"
+        app:titleMarginStart="80dp"
+        app:titleTextColor="@color/white"
+        android:theme="?attr/actionBarTheme"/>
+
+    <Button
+        android:id="@+id/newButton"
+        android:layout_width="380dp"
+        android:layout_height="50dp"
+        android:text="New"
+        android:layout_marginStart="10dp"
+        android:layout_marginTop="10dp"
+        android:backgroundTint="@color/primaryColor" />
+
+    <androidx.recyclerview.widget.RecyclerView
+        android:id="@+id/recyclerView"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_marginTop="20dp"/>
+
+</LinearLayout>
